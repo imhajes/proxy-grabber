@@ -45,7 +45,7 @@ class ProxyGrabber():
 
 
     def save_json(self):
-        with open("proxy list.txt", mode="a") as proxyfile:
+        with open("http.txt", mode="a") as proxyfile:
             for response in self.responses:
                 for item in response:
                     proxyfile.write(item["addr"]+"\n")
